@@ -33,6 +33,18 @@
         <developerConnection>scm:svn:https://log4jdbc-log4j2.googlecode.com/svn/trunk</developerConnection>
         <url>http://code.google.com/p/log4jdbc-log4j2/source/browse</url>
     </scm>
+	<distributionManagement>
+		<repository>
+			<id>mvn-proxy</id>
+			<name>BPC releases repository</name>
+			<url>http://nexus.dmz1.bpc.in:8081/nexus/content/repositories/releases-temporal</url>
+		</repository>
+		<snapshotRepository>
+			<id>mvn-proxy</id>
+			<name>BPC snapshots repository</name>
+			<url>http://nexus.dmz1.bpc.in:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<organization>
         <name>Bgee - Swiss Institute of Bioinformatics</name>
         <url>http://www.bgee.org</url>

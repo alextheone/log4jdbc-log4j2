@@ -25,9 +25,9 @@ import java.sql.Clob;
 import java.sql.Date;
 import java.sql.NClob;
 import java.sql.Ref;
-import java.sql.RowId;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
+import java.sql.RowId;
 import java.sql.SQLException;
 import java.sql.SQLWarning;
 import java.sql.SQLXML;
@@ -93,7 +93,7 @@ public class ResultSetSpy implements ResultSet, Spy
   protected void reportAllReturns(String methodCall, Object returnValue, Object... methodParams)
   {
                 
-    if (resultSetCollector != null)
+    if (resultSetCollector != null && log.isResultSetCollectionEnabled())
     {
      
       // Give the result set collector a chance to do its work
